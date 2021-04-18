@@ -15,7 +15,7 @@ const MyOdersForm = () => {
      const handlePaymentSuccess = paymentId =>{
         const selectItem = JSON.parse(localStorage.getItem(getDataKey()));
         const orderDetails = { ...loggedInUser, products: selectItem, order: orderData, date: new Date() }; 
-        fetch('http://localhost:5000/addOrder', {
+        fetch('https://thawing-shelf-52528.herokuapp.com/addOrder', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

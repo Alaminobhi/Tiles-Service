@@ -7,7 +7,7 @@ const ContactForm = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
         const reviews = {...data, date: new Date() };
-        fetch('http://localhost:5000/contacts', {
+        fetch('https://thawing-shelf-52528.herokuapp.com/contacts', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

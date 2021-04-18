@@ -5,7 +5,7 @@ import ContactList from './ContactList';
 const Contacts = () => {
     const [contactList, setContactList] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/contactList')
+        fetch('https://thawing-shelf-52528.herokuapp.com/contactList')
             .then(res => res.json())
             .then(data => setContactList(data))
     }, [])

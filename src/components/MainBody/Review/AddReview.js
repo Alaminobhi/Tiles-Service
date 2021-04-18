@@ -8,7 +8,7 @@ const AddReview = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) =>{
         const reviews = {...loggedInUser, review: data, date: new Date() }; 
-        fetch('http://localhost:5000/addReview', {
+        fetch('https://thawing-shelf-52528.herokuapp.com/addReview', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

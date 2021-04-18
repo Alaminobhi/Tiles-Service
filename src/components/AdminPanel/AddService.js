@@ -17,7 +17,7 @@ const AddService = () => {
             img: imgURL
         };
         console.log(eventData);
-        const url = 'http://localhost:5000/addService';
+        const url = 'https://thawing-shelf-52528.herokuapp.com/addService';
         fetch(url, {
             method: 'POST',
             headers: {
