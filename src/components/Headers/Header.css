@@ -1,0 +1,7 @@
+.header-component {
+    height:650px;
+    position:relative;
+    background-image: url('../../Image/full-fitting-service.jpg');
+    background-size: cover;
+
+}
